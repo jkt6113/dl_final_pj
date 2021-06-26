@@ -23,4 +23,6 @@ class StockDataset(Dataset):
 if __name__ == "__main__":
     dataset = StockDataset(file_path = '000001.XSHE_2020.csv')
     for window, target in dataset:
-        print('a')
+        print(window)
+        print(target)
+        break
